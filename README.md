@@ -1,2 +1,2 @@
 # Jnanalaya
-Nithyanana Jnanalya Customization of DSpace
+Nithyanana Jnanalya Library. Customization of DSpace
