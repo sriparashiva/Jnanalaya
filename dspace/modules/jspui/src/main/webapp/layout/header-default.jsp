@@ -107,45 +107,125 @@
     <%-- HACK: leftmargin, topmargin: for non-CSS compliant Microsoft IE browser --%>
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
     <body>
+
 <div class="cornell-brand">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-6">
-                <a href="http://www.cornell.edu"><img src="<%= request.getContextPath() %>/image/dspace-logo-only.png"></a>
-            </div>
-            <div class="col-xs-6 mobile-buttons">
-                <button data-target="#nav-collapse" data-toggle="collapse" class="navbar-toggle" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <ul class="nav nav-pills visible-xs">
-                    <li>
-                        <form method="get" action="/login" style="display: inline">
-                            <button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <div class="container">
+   <div class="row">
+    <div class="col-xs-6">
+     <a href="http://nithyanandauniversity.org/"><img src=
+     "<%= request.getContextPath() %>/image/university-logo.gif"></a>
     </div>
-</div>
-<header class="navbar navbar-inverse navbar-fixed-top">
-    <%
-    if (!navbar.equals("off"))
-    {
-%>
-            <div class="container">
-                <dspace:include page="<%= navbar %>" />
-            </div>
-<%
-    }
-    else
-    {
-    %>
-        <!-- div class="container">
-            <dspace:include page="/layout/navbar-minimal.jsp" />
-        </div-->
-<%
-    }
-%>
+
+    <div class="col-xs-6 mobile-buttons">
+     <button data-target="#nav-collapse" data-toggle="collapse" class="navbar-toggle"
+     type="button">
+	   <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+	 </button>
+
+     <ul class="nav nav-pills visible-xs">
+      <li>
+        <form method="get" action="<%= request.getContextPath() %>/password-login" style="display: inline">
+	     <button class="navbar-toggle navbar-link">
+		   <b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b>
+	     </button>
+		</form>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+
+<header>
+ <div class="row">
+  <div role="navigation" class="navbar navbar-default navbar-static-top">
+   <div class="container">
+    <div class="col-sm-8 col-sm-push-4 mobile-nav">
+     <div id="nav-collapse" class="navbar-collapse collapse">
+      <div class="navbar-header pull-right">
+       <div class="header-search">
+        <form action="/discover" id="ds-search-form" class="" method="post" name=
+        "ds-search-form">
+         <fieldset>
+          <div class="input-group">
+           <input name="query" class="ds-text-field form-control" type="text" placeholder="Search">
+		   <span class="input-group-btn"><button class="ds-button-field btn btn-primary" title="Go">
+		    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		   </button></span>
+          </div>
+         </fieldset>
+        </form>
+       </div>
+
+       <ul class="nav navbar-nav">
+        <li class="dropdown">
+         <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="browse-dropdown-toggle">Browse<b class="caret"></b></a>
+
+         <ul data-no-collapse="true" aria-labelledby="browse-dropdown-toggle" role="menu"
+         class="dropdown-menu">
+          <li><a href="/community-list">Communities &amp; Collections</a></li>
+
+          <li><a href="/browse?type=dateissued">Issue Date</a></li>
+
+          <li><a href="/browse?type=author">Authors</a></li>
+
+          <li><a href="/browse?type=title">Titles</a></li>
+
+          <li><a href="/browse?type=subject">Subjects</a></li>
+
+          <li><a href="/browse?type=type">Types</a></li>
+         </ul>
+        </li>
+
+        <li class="dropdown">
+         <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="about-dropdown-toggle">About<b class="caret"></b></a>
+
+         <ul data-no-collapse="true" aria-labelledby="about-dropdown-toggle" role="menu"
+         class="dropdown-menu">
+          <li><a href="/help/index.html">About Jnanalaya</a></li>
+
+          <li><a href=
+          "http://guides.library.cornell.edu/ecommons/policy">Policies</a></li>
+
+          <li><a href="http://guides.library.cornell.edu/ecommons/terms">Terms of
+          Use</a></li>
+
+          <li><a href="/page/statistics">Statistics</a></li>
+
+          <li><a href="/page/contact">Contact Us</a></li>
+         </ul>
+        </li>
+
+        <li><a href="<%= request.getContextPath() %>/help/index.html">Help</a></li>
+
+        <li class="login hidden-xs"><a href="<%= request.getContextPath() %>/password-login"><span class=
+        "hidden-xs">Login</span></a></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+
+    <div class="col-sm-4 col-sm-pull-8">
+     <div class="navbar-header">
+      <a class="navbar-brand" href="/">Jnanalaya</a>
+
+      <div class="tagline">
+       Largest digital repository on Hinduism
+      </div>
+
+      <div class="navbar-header visible-xs hidden-sm hidden-md hidden-lg">
+       <ul class="nav nav-pills"></ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
 </header>
+
 
 <main id="content" role="main">
 <div class="container banner">
