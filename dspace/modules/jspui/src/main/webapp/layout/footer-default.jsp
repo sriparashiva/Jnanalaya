@@ -1,0 +1,197 @@
+<%--
+
+    The contents of this file are subject to the license and copyright
+    detailed in the LICENSE and NOTICE files at the root of the source
+    tree and available online at
+
+    http://www.dspace.org/license/
+
+--%>
+<%--
+  - Footer for home page
+  --%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<%@ page contentType="text/html;charset=UTF-8" %>
+
+<%@ page import="java.net.URLEncoder" %>
+<%@ page import="org.dspace.app.webui.util.UIUtil" %>
+
+<%
+    String sidebar = (String) request.getAttribute("dspace.layout.sidebar");
+%>
+
+            <%-- Right-hand side bar if appropriate --%>
+<%
+    if (sidebar != null)
+    {
+%>
+	</div>
+	<div class="col-md-3">
+                    <%= sidebar %>
+    </div>
+    </div>       
+<%
+    }
+%>
+</div>
+</main>
+            <%-- Page footer --%>
+
+<div class="ecommons-footer">
+  <div class="container">
+	<div class="row">
+	  <div class="col-sm-3 nav-list">
+		<h5>
+		  Explore NJHS
+		</h5>
+		<ul class="nav">
+		  <li>
+			<a href="<%= request.getContextPath() %>/">Home</a>
+		  </li>
+		  <li>
+			<a href="<%= request.getContextPath() %>/community-list">Browse Communities &amp;
+			Collections</a>
+		  </li>
+		  <li>
+			<a href="<%= request.getContextPath() %>/browse?type=dateissued">Browse by Issue
+			Date</a>
+		  </li>
+		  <li>
+			<a href="<%= request.getContextPath() %>/browse?type=author">Browse by Author</a>
+		  </li>
+		  <li>
+			<a href="<%= request.getContextPath() %>/browse?type=title">Browse by Title</a>
+		  </li>
+		  <li>
+			<a href="<%= request.getContextPath() %>/browse?type=subject">Browse by
+			Subject</a>
+		  </li>
+		  <li>
+			<a href="<%= request.getContextPath() %>/browse?type=type">Browse by Type</a>
+		  </li>
+		</ul>
+	  </div>
+	  <div class="col-sm-3 nav-list">
+		<h5>
+		  About NJHS
+		</h5>
+		<ul class="nav">
+		  <li>
+			<a href=
+			"">About</a>
+		  </li>
+		  <li>
+			<a href=
+			"">
+			Policies</a>
+		  </li>
+		  <li>
+			<a href=
+			"">Terms
+			of Use</a>
+		  </li>
+		  <li>
+			<a href="">Statistics</a>
+		  </li>
+		  <li>
+			<a href="">Contact Us</a>
+		  </li>
+		</ul>
+	  </div>
+	  <div class="col-sm-3 nav-list">
+		<h5>
+		  Help
+		</h5>
+		<ul class="nav">
+		  <li>
+			<a href=
+			"">Help</a>
+		  </li>
+		</ul>
+		<h5>
+		  Make a Deposit
+		</h5>
+		<ul class="nav">
+		  <li>
+			<a href="<%= request.getContextPath() %>/submit">Submit your work</a>
+		  </li>
+		  <li>
+			<a href=
+			"">
+			How to submit</a>
+		  </li>
+		</ul>
+	  </div>
+	  <div class="col-sm-3 nav-list">
+		<h5>
+		  My Account
+		</h5>
+		<ul class="nav">
+		  <li class="login-link">
+			<a href="<%= request.getContextPath() %>/password-login">Login</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+  <div class="row">
+	<div class="col-md-3">
+	  <a href="http://nithyanandauniversity.org/"><img class="cul-logo img-responsive"
+	  alt="Nithyananda Hindu University" src="<%= request.getContextPath() %>/image/logo.gif"></a>
+	</div>
+	<div class="col-md-9 cul-menu">
+	  <h3>
+		Contact us
+	  </h3>
+	  <ul class="nav footer-nav">
+		<li>
+		  <a href="">Ask a Librarian</a>
+		</li>
+	  </ul>
+	  <h3>
+		Library Resources
+	  </h3>
+	  <ul class="nav footer-nav">
+		<li>
+		  <a href="">Nithyananda Jnanalaya</a>
+		</li>
+		<li>
+		  <a href="">Ask the Avatar</a>
+		</li>
+		<li>
+		  <a href="">OPAC</a>
+		</li>
+		<li>
+		  <a href="">OCR+</a>
+		</li>
+		<li>
+		  <a href="">Indological Translation Machine</a>
+		</li>
+	  </ul>
+	</div>
+  </div>
+  <div class="row footer-copyright">
+	<div class="col-sm-12">
+	  <p>
+		&copy; 2019 Nithyananda Hindu University | <a href=
+		"">Privacy</a> | <a href=
+		"">Web Accessibility
+		Assistance</a>
+	  </p>
+	</div>
+  </div>
+  </div>
+  <a class="hidden" href="/htmlmap">&nbsp;</a>
+  <p>
+    &nbsp;
+  </p>
+</footer>
+
+    </body>
+</html>
