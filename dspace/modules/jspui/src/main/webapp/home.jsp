@@ -82,7 +82,8 @@
           to unearth and preserve the source manuscripts on Hinduism.
           Sanatana Hindu Dharma being the source of estimated 20 million source manuscripts,
            possesses the largest collection on religious text.
-           <small><a href="/page/about">Learn more<i class="glyphicon glyphicon-chevron-right"></i></a></small>
+           <small><a href="<%= request.getContextPath() %>/about">
+           Learn more<i class="glyphicon glyphicon-chevron-right"></i></a></small>
        </p>
      </div>
    </div>

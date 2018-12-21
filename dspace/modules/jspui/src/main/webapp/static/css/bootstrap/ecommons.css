@@ -1688,7 +1688,8 @@
     padding-left: 10px; } }
 body {
   font-family: "Oxygen", sans serif;
-  background: #222222; }
+/*  background: #222222; */
+}
 
 a {
   color: #0068ac; }

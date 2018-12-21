@@ -148,6 +148,11 @@
   <!-- Servlets -->
 
   <servlet>
+    <servlet-name>about</servlet-name>
+    <servlet-class>org.jnanalaya.app.webui.servlet.AboutServlet</servlet-class>
+  </servlet>
+
+  <servlet>
     <servlet-name>authorize</servlet-name>
     <servlet-class>org.dspace.app.webui.servlet.admin.AuthorizeAdminServlet</servlet-class>
   </servlet>
@@ -485,6 +490,12 @@
   </servlet-mapping>
  
   <!-- Servlet Mappings -->
+
+  <servlet-mapping>
+
+  <servlet-name>about</servlet-name>
+    <url-pattern>/about</url-pattern>
+  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>authorize</servlet-name>

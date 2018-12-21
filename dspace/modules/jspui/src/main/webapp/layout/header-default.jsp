@@ -190,7 +190,7 @@
          About<b class="caret"></b></a>
          <ul data-no-collapse="true" aria-labelledby="about-dropdown-toggle" role="menu"
          class="dropdown-menu">
-          <li><a href="<%= request.getContextPath() %>/help/index.html">About Jnanalaya</a></li>
+          <li><a href="<%= request.getContextPath() %>/about">About Jnanalaya</a></li>
           <li><a href="<%= request.getContextPath() %>/policy">Policies</a></li>
           <li><a href="<%= request.getContextPath() %>/terms">Terms of Use</a></li>
           <li><a href="<%= request.getContextPath() %>/page/statistics">Statistics</a></li>
