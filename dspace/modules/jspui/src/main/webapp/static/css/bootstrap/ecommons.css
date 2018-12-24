@@ -1555,7 +1555,7 @@
   background: white; }
 
 .navbar {
-  background: #b31b1b;
+  background: #800000;
   margin-bottom: 0;
   border: 0; }
 
@@ -1659,7 +1659,7 @@
     padding-right: 15px;
     margin-left: 0;
     margin-right: 0;
-    background: #b31b1b; }
+    background: #800000; }
 
   .header-search .input-group {
     float: right;
@@ -1746,7 +1746,7 @@ blockquote {
   font-size: 16px; }
 
 header {
-  background: #b31b1b; }
+  background: #800000; }
   header .row {
     margin-left: 0;
     margin-right: 0; }
@@ -1886,7 +1886,7 @@ div.modal div.modal-backdrop {
     margin-top: 50px; }
 
 .item-page-field-wrapper .glyphicon-lock {
-  color: #b31b1b; }
+  color: #800000; }
 
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h3 {
   clear: both; }
@@ -2035,7 +2035,7 @@ footer {
 .intro-text p {
   margin-bottom: 0; }
 .intro-text strong {
-  color: #b31b1b;
+  color: #800000;
   font-size: 120%; }
 .intro-text .btn-primary {
   background: #868787;
@@ -2047,7 +2047,7 @@ footer {
   border-collapse: #222222; }
 
 .make-deposit h3 {
-  color: #b31b1b;
+  color: #800000;
   margin-top: 0;
   font-size: 22px; }
 .make-deposit .btn-ecommons {
@@ -2058,8 +2058,8 @@ footer {
 .page-search .form-control {
   padding-left: 10px; }
 .page-search .btn-primary {
-  background: #b31b1b;
-  border-color: #b31b1b; }
+  background: #800000;
+  border-color: #800000; }
 .page-search .btn-primary:hover {
   background: #990f26;
   border-color: #990f26; }
@@ -2130,7 +2130,7 @@ a.list-group-item:hover {
   margin-bottom: .25em; }
 
 .list-group-item-heading {
-  color: #b31b1b !important;
+  color: #800000 !important;
   font-weight: 700;
   font-size: 14px; }
 

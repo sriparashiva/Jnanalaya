@@ -78,7 +78,7 @@
    <div class="col-sm-7">
      <div class="well intro-text">
        <p class="lead">
-         <strong>Nithyananda Jnanalaya</strong> Hindu Scripture, under its unique project seeks
+         <strong>Nithyananda Jnanalaya Hindu Scripture</strong>, under its unique project seeks
           to unearth and preserve the source manuscripts on Hinduism.
           Sanatana Hindu Dharma being the source of estimated 20 million source manuscripts,
            possesses the largest collection on religious text.
@@ -95,7 +95,7 @@
         <p>Submit your document, research papers, research articles, theses and more into Nithyananda Hindu University.</p>
         <a class="btn btn-ecommons" href="<%= request.getContextPath() %>/submit">
         Submit your work<i class="glyphicon glyphicon-chevron-right"></i></a>
-        <a href="<%= request.getContextPath() %>/submit" class="submit-link btn">
+        <a href="<%= request.getContextPath() %>/howtosubmit" class="submit-link btn">
         How to submit</a>
       </div>
     </div>

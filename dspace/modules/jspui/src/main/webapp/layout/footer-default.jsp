@@ -80,17 +80,16 @@
 		<ul class="nav">
 		  <li>
 			<a href=
-			"">About</a>
+			"<%= request.getContextPath() %>/about">About</a>
 		  </li>
 		  <li>
 			<a href=
 			"">
-			Policies</a>
+			Founder</a>
 		  </li>
 		  <li>
 			<a href=
-			"">Terms
-			of Use</a>
+			"<%= request.getContextPath() %>/vision">Mission and Vision</a>
 		  </li>
 		  <li>
 			<a href="">Statistics</a>
@@ -102,16 +101,28 @@
 	  </div>
 	  <div class="col-sm-3 nav-list">
 		<h5>
-		  Help
+		  Projects
 		</h5>
 		<ul class="nav">
 		  <li>
 			<a href=
-			"">Help</a>
+			"<%= request.getContextPath() %>/digitization">Digitization</a>
 		  </li>
+		  <li>
+            <a href=
+            "<%= request.getContextPath() %>/preservation">Preservation</a>
+          </li>
+		  <li>
+            <a href=
+            "<%= request.getContextPath() %>/digitization">Digital Collection</a>
+          </li>
+          <li>
+            <a href=
+            "<%= request.getContextPath() %>/cataloging">Cataloging</a>
+          </li>
 		</ul>
 		<h5>
-		  Make a Deposit
+		  Donate
 		</h5>
 		<ul class="nav">
 		  <li>
@@ -119,8 +130,7 @@
 		  </li>
 		  <li>
 			<a href=
-			"">
-			How to submit</a>
+			"<%= request.getContextPath() %>/howtosubmit">How to submit</a>
 		  </li>
 		</ul>
 	  </div>
