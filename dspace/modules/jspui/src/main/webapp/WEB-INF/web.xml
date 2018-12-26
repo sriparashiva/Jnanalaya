@@ -846,6 +846,20 @@
   </servlet>
 
   <servlet-mapping>
+    <servlet-name>digitalcollection</servlet-name>
+    <url-pattern>/digitalcollection</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>digitalcollection</servlet-name>
+    <jsp-file>/jnanalaya/display-file.jsp</jsp-file>
+    <init-param>
+        <param-name>fileName</param-name>
+        <param-value>/jnanalaya/digitalcollection.html</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
     <servlet-name>digitization</servlet-name>
     <url-pattern>/digitization</url-pattern>
   </servlet-mapping>

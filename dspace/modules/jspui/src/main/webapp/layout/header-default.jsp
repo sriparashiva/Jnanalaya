@@ -45,7 +45,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><%= siteName %>: <%= title %></title>
+        <title><%= siteName %> - Largest digital repository on Hinduism</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="Generator" content="<%= generator %>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -191,15 +191,23 @@
          <ul data-no-collapse="true" aria-labelledby="about-dropdown-toggle" role="menu"
          class="dropdown-menu">
           <li><a href="<%= request.getContextPath() %>/about">About Jnanalaya</a></li>
-          <li><a href="<%= request.getContextPath() %>/policy">Policies</a></li>
-          <li><a href="<%= request.getContextPath() %>/terms">Terms of Use</a></li>
-          <li><a href="<%= request.getContextPath() %>/page/statistics">Statistics</a></li>
-          <li><a href="<%= request.getContextPath() %>/page/contact">Contact Us</a></li>
+          <li><a href="<%= request.getContextPath() %>/founder">Founder</a></li>
+          <li><a href="<%= request.getContextPath() %>/vision">Vision and Mission</a></li>
          </ul>
         </li>
 
-        <li><a href="<%= request.getContextPath() %>/help/index.html">
-        Help</a></li>
+        <li class="dropdown">
+         <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="about-dropdown-toggle">
+         Projects<b class="caret"></b></a>
+         <ul data-no-collapse="true" aria-labelledby="about-dropdown-toggle" role="menu"
+         class="dropdown-menu">
+          <li><a href="<%= request.getContextPath() %>/digitization">Digitization</a></li>
+          <li><a href="<%= request.getContextPath() %>/preservation">Preservation</a></li>
+          <li><a href="<%= request.getContextPath() %>/digitalcollection">Digital Collection</a></li>
+          <li><a href="<%= request.getContextPath() %>/cataloging">Cataloging</a></li>
+         </ul>
+        </li>
+
         <li class="login hidden-xs"><a href="<%= request.getContextPath() %>/password-login"><span class="hidden-xs">
         Login</span></a></li>
 
@@ -212,7 +220,7 @@
     <!-- #### Jnanalaya page big header -->
     <div class="col-sm-4 col-sm-pull-8">
      <div class="navbar-header">
-      <a class="navbar-brand" href="<%= request.getContextPath() %>">Jnanalaya</a>
+      <a class="navbar-brand" href="<%= request.getContextPath() %>">Nithyananda Jnanalaya</a>
       <div class="tagline">Largest digital repository on Hinduism</div>
       <div class="navbar-header visible-xs hidden-sm hidden-md hidden-lg">
        <ul class="nav nav-pills"></ul>
