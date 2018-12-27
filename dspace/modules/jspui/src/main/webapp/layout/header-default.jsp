@@ -244,8 +244,8 @@
         <div class="col-md-3"><img class="pull-right" src="<%= request.getContextPath() %>/image/logo.gif" alt="DSpace logo" />
         </div>
     </div>
-</div -->
-<br/>
+</div>
+<br/ -->
                 <%-- Location bar --%>
 <%
     if (locbar)
@@ -260,8 +260,10 @@
 
 
         <%-- Page contents --%>
-<div class="container">
+<!-- div class="container" -->
+<%--
 <% if (request.getAttribute("dspace.layout.sidebar") != null) { %>
     <div class="row">
     <div class="col-md-9">
-<% } %>	
+<% } %>
+--%>

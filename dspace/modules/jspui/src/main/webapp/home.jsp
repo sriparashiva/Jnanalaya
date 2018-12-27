@@ -71,51 +71,55 @@
     CommunityService communityService = ContentServiceFactory.getInstance().getCommunityService();
 %>
 
-<div class="container">
-  <div class="row">
+<div class="content">
+  <div>
 
-   <!-- #### Jnanalaya Intro -->
-   <div class="col-sm-7">
-     <div class="well intro-text">
-       <p class="lead">
-         <strong>Nithyananda Jnanalaya Hindu Scriptures</strong>, under its unique project seeks
-          to unearth and preserve the source manuscripts on Hinduism.
-          Sanatana Hindu Dharma being the source of estimated 20 million source manuscripts,
-           possesses the largest collection on religious text.
-           <small><a href="<%= request.getContextPath() %>/about">
-           Learn more<i class="glyphicon glyphicon-chevron-right"></i></a></small>
-       </p>
-     </div>
-   </div>
+    <div class="hero">
+      <div class="container">
+        <div class="row">
 
-    <!-- #### Deposit book -->
-    <div class="col-sm-4 col-sm-offset-1">
-      <div class="well make-deposit">
-        <h3>Make a deposit</h3>
-        <p>Submit your document, research papers, research articles, theses and more into Nithyananda Hindu University.</p>
-        <a class="btn btn-ecommons" href="<%= request.getContextPath() %>/submit">
-        Submit your work<i class="glyphicon glyphicon-chevron-right"></i></a>
-        <a href="<%= request.getContextPath() %>/howtosubmit" class="submit-link btn">
-        How to submit</a>
+          <!-- #### Jnanalaya Intro -->
+          <div class="col-sm-7">
+            <div class="well intro-text">
+               <p class="lead">
+                 <strong>Nithyananda Jnanalaya Hindu Scriptures</strong>, under its unique project seeks
+                  to unearth and preserve the source manuscripts on Hinduism.
+                  Sanatana Hindu Dharma being the source of estimated 20 million source manuscripts,
+                   possesses the largest collection on religious text.
+                   <small><a href="<%= request.getContextPath() %>/about">
+                   Learn more<i class="glyphicon glyphicon-chevron-right"></i></a></small>
+               </p>
+            </div>
+          </div>
+
+          <!-- #### Deposit book -->
+          <div class="col-sm-4 col-sm-offset-1">
+            <div class="well make-deposit">
+              <h3>Make a deposit</h3>
+              <p>Submit your document, research papers, research articles, theses and more to Nithyananda Hindu University.</p>
+              <a class="btn btn-ecommons" href="<%= request.getContextPath() %>/submit">
+                Submit your work<i class="glyphicon glyphicon-chevron-right"></i></a>
+              <a href="<%= request.getContextPath() %>/howtosubmit" class="submit-link btn">
+                How to submit</a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-
-  </div>
-</div>
-
-</div>
+    <!-- end hero -->
 
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
-<div class="row">
+  <div class="row">
 <%
 if (submissions != null && submissions.count() > 0)
 {
 %>
-        <div class="col-md-8">
-        <div class="panel panel-primary">        
+    <div class="col-md-8">
+      <div class="panel panel-primary">
         <div id="recent-submissions-carousel" class="panel-heading carousel slide">
           <h3><fmt:message key="jsp.collection-home.recentsub"/>
-              <%
+          <%
     if(feedEnabled)
     {
 	    	String[] fmts = feedData.substring(feedData.indexOf(':')+1).split(",");
@@ -163,17 +167,18 @@ if (submissions != null && submissions.count() > 0)
 		            displayAbstract = "";
 		        }
 		%>
-		    <!-- div style="padding-bottom: 50px; min-height: 200px;" class="item <%= first?"active":""%>">
+		    <div style="padding-bottom: 50px; min-height: 200px;" class="item <%= first?"active":""%>">
 		      <div style="padding-left: 80px; padding-right: 80px; display: inline-block;"><%= Utils.addEntities(StringUtils.abbreviate(displayTitle, 400)) %> 
 		      	<a href="<%= request.getContextPath() %>/handle/<%=item.getHandle() %>" class="btn btn-success">See</a>
                         <p><%= Utils.addEntities(StringUtils.abbreviate(displayAbstract, 500)) %></p>
 		      </div>
-		    </div -->
+		    </div>
 		<%
 				first = false;
 		     }
 		%>
-		  </div>
+		</div>
+		<!-- end of carousel-inner -->
 
 		  <!-- Controls -->
 		  <a class="left carousel-control" href="#recent-submissions-carousel" data-slide="prev">
@@ -189,14 +194,17 @@ if (submissions != null && submissions.count() > 0)
 		    <li data-target="#recent-submissions-carousel" data-slide-to="<%= i %>"></li>
 		    <% } %>
 	      </ol>
-     </div></div></div>
+     </div>
+     </div>
+     </div>
 <%
 }
 %>
-<!-- div class="col-md-4">
-    <%= sideNews %>
-</div -->
+    <!-- div class="col-md-4">
+        <%= sideNews %>
+    </div -->
 </div>
+
 <div class="container row">
 <%
 if (communities != null && communities.size() != 0)

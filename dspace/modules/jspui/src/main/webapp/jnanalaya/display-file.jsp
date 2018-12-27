@@ -15,15 +15,32 @@
 
 <%
     String fileName = config.getInitParameter("fileName");
-    String aboutText = FileUtil.readFile(fileName);
+    String textFromFile = FileUtil.readFile(fileName);
 %>
 
-<dspace:layout locbar="nolink" titlekey="About">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="<%= request.getContextPath() %>/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/ecommons.css" type="text/css" />
+     </head>    
 
-    <div class="jumbotron">
-        <%= aboutText %>
-	</div>
+<body>
+    <dspace:layout locbar="nolink" titlekey="About">
+    <div class="main-content" role="main">
+          <div class="container">
+            <div class="row primary-wrapper" id="maincontent">
 
+              <%= textFromFile %>
+
+        </div>
+      </div>
+    </div>
     <p><a href="<%= request.getContextPath() %>/"><fmt:message key="jsp.general.gohome"/></a></p>
-
-</dspace:layout>
+    </dspace:layout>
+</body>

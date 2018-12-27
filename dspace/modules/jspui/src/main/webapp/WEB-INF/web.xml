@@ -874,6 +874,20 @@
   </servlet>
 
   <servlet-mapping>
+    <servlet-name>founder</servlet-name>
+    <url-pattern>/founder</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>founder</servlet-name>
+    <jsp-file>/jnanalaya/display-file.jsp</jsp-file>
+    <init-param>
+        <param-name>fileName</param-name>
+        <param-value>/jnanalaya/founder.html</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
     <servlet-name>howtosubmit</servlet-name>
     <url-pattern>/howtosubmit</url-pattern>
   </servlet-mapping>

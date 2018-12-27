@@ -102,7 +102,7 @@
   <div class="row">
 	<div class="col-md-3">
 	  <a href="http://nithyanandauniversity.org/"><img class="cul-logo img-responsive"
-	  alt="Nithyananda Hindu University" src="<%= request.getContextPath() %>/image/logo.gif"></a>
+	  alt="Nithyananda Hindu University" src="<%= request.getContextPath() %>/image/university-logo.png"></a>
 	</div>
 	<div class="col-md-9 cul-menu">
 	  <h3>
