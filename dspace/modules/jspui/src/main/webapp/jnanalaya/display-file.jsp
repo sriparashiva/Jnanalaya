@@ -32,7 +32,7 @@
 
 <body>
     <dspace:layout locbar="nolink" titlekey="About">
-    <div class="main-content" role="main">
+    <div class="about" role="main">
           <div class="container">
             <div class="row primary-wrapper" id="maincontent">
 
