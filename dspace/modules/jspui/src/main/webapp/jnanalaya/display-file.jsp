@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/ecommons.css" type="text/css" />
-     </head>    
+     </head>
 
 <body>
     <dspace:layout locbar="nolink" titlekey="About">

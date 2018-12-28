@@ -115,8 +115,8 @@
 
     <!-- #### university logo -->
     <div class="col-xs-6">
-     <a href="http://nithyanandauniversity.org/"><img src=
-     "<%= request.getContextPath() %>/image/university-logo.gif"></a>
+     <a href="https://nithyanandahinduuniversity.exphosted.com/"><img src=
+     "<%= request.getContextPath() %>/image/nhu-logo-header.png"></a>
     </div>
 
     <!-- #### mobile buttons for user, login, search and menu -->

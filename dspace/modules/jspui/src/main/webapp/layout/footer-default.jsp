@@ -64,6 +64,7 @@
 		  <li><a href="<%= request.getContextPath() %>/about">About</a></li>
 		  <li><a href="<%= request.getContextPath() %>/founder">Founder</a></li>
 		  <li><a href="<%= request.getContextPath() %>/vision">Vision and Mission</a></li>
+		  <li><a href="<%= request.getContextPath() %>/statistics">Statistics</a></li>
 		  <li><a href="">Contact Us</a></li>
 		</ul>
 	  </div>
@@ -101,8 +102,8 @@
   <div class="container">
   <div class="row">
 	<div class="col-md-3">
-	  <a href="http://nithyanandauniversity.org/"><img class="cul-logo img-responsive"
-	  alt="Nithyananda Hindu University" src="<%= request.getContextPath() %>/image/university-logo.png"></a>
+	  <a href="https://nithyanandahinduuniversity.exphosted.com/"><img class="cul-logo img-responsive"
+	  alt="Nithyananda Hindu University" src="<%= request.getContextPath() %>/image/nhu-logo-footer.png"></a>
 	</div>
 	<div class="col-md-9 cul-menu">
 	  <h3>
@@ -115,20 +116,20 @@
 		Library Resources
 	  </h3>
 	  <ul class="nav footer-nav">
-		<li><a href="#">Nithyananda Jnanalaya</a></li>
+		<li><a href="http://nithyanandajnanalaya.org/">Nithyananda Jnanalaya</a></li>
 		<li><a href="http://satsang.nithyanandajnanalaya.org/">Ask the Avatar</a></li>
 		<li><a href="http://grantha.nithyanandajnanalaya.org/">OPAC</a></li>
 		<li><a href="http://shastra.nithyanandajnanalaya.org/">Digital Corpus</a></li>
-		<li><a href="#">Indological Translation Machine</a></li>
+		<li><a href="https://nithyanandahinduuniversity.exphosted.com/">Nithyananda Hindu University</a></li>
+		<li><a href="http://nithyanandatruth.org/">Nithyananda Truth</a></li>
+		<li><a href="http://nithyananda.org/">Official Home Page </a></li>
 	  </ul>
 	</div>
   </div>
   <div class="row footer-copyright">
 	<div class="col-sm-12">
 	  <p>
-		&copy; 2019 Nithyananda Hindu University |
-		 <a href="#">Privacy</a> |
-		 <a href="#">Web Accessibility 	Assistance</a>
+		&copy; 2019 Nithyananda Hindu University, 9720 Central Avenue, Montclair CA – 917633
 	  </p>
 	</div>
   </div>

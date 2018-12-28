@@ -1551,7 +1551,7 @@
   content: ""; }
 
 .cornell-brand {
-  height: 45px;
+  height: 60px;
   background: white; }
 
 .navbar {
@@ -1596,7 +1596,9 @@
 .navbar-default .navbar-collapse {
   border: none; }
 .navbar-default .dropdown-menu > li > a {
-  background: white; }
+  background: white;}
+.navbar-default .dropdown-menu > li > a:hover {
+     color: #D4AF37;}
 .navbar-default .dropdown-menu {
   padding: 1px 0; }
 
@@ -1692,10 +1694,10 @@ body {
 }
 
 a {
-  color: #0068ac; }
+  color: #990f26; }
 
 a:hover {
-  color: #222222; }
+  color: #D4AF37; }
 
 p, li {
   font-size: 16px;
@@ -1718,13 +1720,13 @@ blockquote {
   margin-bottom: 0; }
 
 .btn-ecommons {
-  background: #2aa198;
+  background: #990f26;
   color: white;
   font-size: 16px;
   border: none; }
 
 .btn-ecommons:hover, .btn-ecommons:active, .btn-ecommons:focus {
-  background: #16524d;
+  background: #D4AF37;
   color: white; }
 
 .btn-primary {
@@ -2072,13 +2074,16 @@ footer {
 .content .submit-link {
   margin-top: .75em;
   border: 0;
+  color: #990f26;
   font-size: 16px; }
 
 .submit-link:hover {
+  color: #D4AF37;
   text-decoration: underline; }
 
 .submit-link:active,
 .submit-link:focus {
+  color: #D4AF37;
   box-shadow: none; }
 
 .featured-item {
@@ -2145,5 +2150,14 @@ a.list-group-item:hover {
   .ecommons-footer,
   footer {
     display: none !important; } }
+
+.panel-primary .panel-heading {
+    background-image: -webkit-gradient(linear,left 0,left 100%,from(#990f26),to(#990f26));
+    background-image: -webkit-linear-gradient(top,#990f26,0%,#990f26,100%);
+    background-image: -moz-linear-gradient(top,#990f26 0,#990f26 100%);
+    background-image: linear-gradient(to bottom,#990f26 0,#990f26 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca',endColorstr='#ff357ebd',GradientType=0);
+}
 
 /*# sourceMappingURL=ecommons.css.map */
