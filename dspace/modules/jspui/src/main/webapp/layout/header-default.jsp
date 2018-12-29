@@ -149,7 +149,7 @@
   <div role="navigation" class="navbar navbar-default navbar-static-top">
    <div class="container">
 
-    <div class="col-sm-8 col-sm-push-4 mobile-nav">
+    <div class="col-sm-6 col-sm-push-6 mobile-nav">
      <div id="nav-collapse" class="navbar-collapse collapse">
       <div class="navbar-header pull-right">
 
@@ -218,7 +218,7 @@
     </div>
 
     <!-- #### Jnanalaya page big header -->
-    <div class="col-sm-4 col-sm-pull-8">
+    <div class="col-sm-6 col-sm-pull-6">
      <div class="navbar-header">
       <a class="navbar-brand" href="<%= request.getContextPath() %>">Kailaasa Nithyananda Jnanalaya</a>
       <div class="tagline">Largest repository on Hinduism</div>
@@ -260,7 +260,7 @@
 
 
         <%-- Page contents --%>
-<!-- div class="container" -->
+<div class="container">
 <%--
 <% if (request.getAttribute("dspace.layout.sidebar") != null) { %>
     <div class="row">
