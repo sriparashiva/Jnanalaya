@@ -13,6 +13,11 @@
   src: url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+:root {
+  --kaavi-bg-color: #6e181c;
+  --kaavi-color: #990f26;
+  --gold-hover-color: #D4AF37;
+}
 .fa {
   display: inline-block;
   font-family: FontAwesome;
@@ -1555,7 +1560,7 @@
   background: white; }
 
 .navbar {
-  background: #800000;
+  background: var(--kaavi-bg-color);
   margin-bottom: 0;
   border: 0; }
 
@@ -1598,7 +1603,7 @@
 .navbar-default .dropdown-menu > li > a {
   background: white;}
 .navbar-default .dropdown-menu > li > a:hover {
-     color: #D4AF37;}
+     color: var(--gold-hover-color);}
 .navbar-default .dropdown-menu {
   padding: 1px 0; }
 
@@ -1661,7 +1666,7 @@
     padding-right: 15px;
     margin-left: 0;
     margin-right: 0;
-    background: #800000; }
+    background: var(--kaavi-bg-color); }
 
   .header-search .input-group {
     float: right;
@@ -1675,7 +1680,7 @@
     border: none; }
   .navbar-default .navbar-nav > li > a {
     color: white;
-    background: #990f26; }
+    background: var(--kaavi-color); }
   .navbar-default .dropdown-menu {
     padding: 5px 0; }
 
@@ -1694,10 +1699,10 @@ body {
 }
 
 a {
-  color: #990f26; }
+  color: var(--kaavi-color); }
 
 a:hover {
-  color: #D4AF37; }
+  color: var(--gold-hover-color); }
 
 p, li {
   font-size: 16px;
@@ -1720,13 +1725,13 @@ blockquote {
   margin-bottom: 0; }
 
 .btn-ecommons {
-  background: #990f26;
+  background: var(--kaavi-color);
   color: white;
   font-size: 16px;
   border: none; }
 
 .btn-ecommons:hover, .btn-ecommons:active, .btn-ecommons:focus {
-  background: #D4AF37;
+  background: var(--gold-hover-color);
   color: white; }
 
 .btn-primary {
@@ -1748,7 +1753,7 @@ blockquote {
   font-size: 16px; }
 
 header {
-  background: #800000; }
+  background: var(--kaavi-bg-color); }
   header .row {
     margin-left: 0;
     margin-right: 0; }
@@ -1888,7 +1893,7 @@ div.modal div.modal-backdrop {
     margin-top: 50px; }
 
 .item-page-field-wrapper .glyphicon-lock {
-  color: #800000; }
+  color: var(--kaavi-bg-color); }
 
 #aspect_artifactbrowser_CollectionViewer_div_collection-home h3 {
   clear: both; }
@@ -1931,7 +1936,7 @@ div.modal div.modal-backdrop {
 
 footer {
   color: #999;
-  border-top: 10px solid #800000;
+  border-top: 10px solid var(--kaavi-bg-color);
   background: #222222; }
   footer .container {
     padding-top: 20px;
@@ -2037,7 +2042,7 @@ footer {
 .intro-text p {
   margin-bottom: 0; }
 .intro-text strong {
-  color: #800000;
+  color: var(--kaavi-bg-color);
   font-size: 120%; }
 .intro-text .btn-primary {
   background: #868787;
@@ -2049,7 +2054,7 @@ footer {
   border-collapse: #222222; }
 
 .make-deposit h3 {
-  color: #800000;
+  color: var(--kaavi-bg-color);
   margin-top: 0;
   font-size: 22px; }
 .make-deposit .btn-ecommons {
@@ -2060,11 +2065,11 @@ footer {
 .page-search .form-control {
   padding-left: 10px; }
 .page-search .btn-primary {
-  background: #800000;
-  border-color: #800000; }
+  background: var(--kaavi-bg-color);
+  border-color: var(--kaavi-bg-color); }
 .page-search .btn-primary:hover {
-  background: #990f26;
-  border-color: #990f26; }
+  background: var(--kaavi-color);
+  border-color: var(--kaavi-color); }
 
 .search-links {
   text-align: right;
@@ -2074,16 +2079,16 @@ footer {
 .content .submit-link {
   margin-top: .75em;
   border: 0;
-  color: #990f26;
+  color: var(--kaavi-color);
   font-size: 16px; }
 
 .submit-link:hover {
-  color: #D4AF37;
+  color: var(--gold-hover-color);
   text-decoration: underline; }
 
 .submit-link:active,
 .submit-link:focus {
-  color: #D4AF37;
+  color: var(--gold-hover-color);
   box-shadow: none; }
 
 .featured-item {
@@ -2135,7 +2140,7 @@ a.list-group-item:hover {
   margin-bottom: .25em; }
 
 .list-group-item-heading {
-  color: #800000 !important;
+  color: var(--kaavi-bg-color) !important;
   font-weight: 700;
   font-size: 14px; }
 
@@ -2153,19 +2158,19 @@ a.list-group-item:hover {
 
 .panel-primary .panel-heading {
     color: #fff;
-    background-image: -webkit-gradient(linear,left 0,left 100%,from(#DC143C),to(#800000));
-    background-image: -webkit-linear-gradient(top,#DC143C,0%,#800000,100%);
-    background-image: -moz-linear-gradient(top,#DC143C 0,#800000 100%);
-    background-image: linear-gradient(to bottom,#DC143C 0,#800000 100%);
+    background-image: -webkit-gradient(linear,left 0,left 100%,from(#DC143C),to(var(--kaavi-bg-color)));
+    background-image: -webkit-linear-gradient(top,#DC143C,0%,var(--kaavi-bg-color),100%);
+    background-image: -moz-linear-gradient(top,#DC143C 0,var(--kaavi-bg-color) 100%);
+    background-image: linear-gradient(to bottom,#DC143C 0,var(--kaavi-bg-color) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca',endColorstr='#ff357ebd',GradientType=0);
 }
 .alert-info {
   color: #fff;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#DC143C), to(#800000));
-  background-image: -webkit-linear-gradient(top, #DC143C, 0%, #800000, 100%);
-  background-image: -moz-linear-gradient(top, #DC143C 0%, #800000 100%);
-  background-image: linear-gradient(to bottom, #DC143C 0%, #800000 100%);
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#DC143C), to(var(--kaavi-bg-color)));
+  background-image: -webkit-linear-gradient(top, #DC143C, 0%, var(--kaavi-bg-color), 100%);
+  background-image: -moz-linear-gradient(top, #DC143C 0%, var(--kaavi-bg-color) 100%);
+  background-image: linear-gradient(to bottom, #DC143C 0%, var(--kaavi-bg-color) 100%);
   background-repeat: repeat-x;
   border-color: #9acfea;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);
@@ -2184,16 +2189,16 @@ a.list-group-item:hover {
   text-align: center;
 }
 .about h1 {
-  color: #800000;
+  color: var(--kaavi-bg-color);
 }
 .about h2 {
-  color: #800000;
+  color: var(--kaavi-bg-color);
 }
 .about h3 {
-  color: #800000;
+  color: var(--kaavi-bg-color);
 }
 .about h4 {
-  color: #800000;
+  color: var(--kaavi-bg-color);
 }
 
 /*# sourceMappingURL=ecommons.css.map */
