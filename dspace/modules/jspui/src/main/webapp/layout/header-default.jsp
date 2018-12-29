@@ -45,7 +45,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><%= siteName %> - Largest digital repository on Hinduism</title>
+        <title><%= siteName %> - Largest repository on Hinduism</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="Generator" content="<%= generator %>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -220,8 +220,8 @@
     <!-- #### Jnanalaya page big header -->
     <div class="col-sm-4 col-sm-pull-8">
      <div class="navbar-header">
-      <a class="navbar-brand" href="<%= request.getContextPath() %>">Nithyananda Jnanalaya</a>
-      <div class="tagline">Largest digital repository on Hinduism</div>
+      <a class="navbar-brand" href="<%= request.getContextPath() %>">Kailaasa Nithyananda Jnanalaya</a>
+      <div class="tagline">Largest repository on Hinduism</div>
       <div class="navbar-header visible-xs hidden-sm hidden-md hidden-lg">
        <ul class="nav nav-pills"></ul>
       </div>
