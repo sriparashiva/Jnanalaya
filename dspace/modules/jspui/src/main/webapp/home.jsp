@@ -108,6 +108,12 @@
       </div>
     </div>
     <!-- end hero -->
+	  
+	  <!-- test list -->
+	  <ul>
+		  <li><h3>Vedas</h3></li>
+		  <li><h3>Agamas</h3></li>
+	  </ul>
 
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
   <div class="row">
